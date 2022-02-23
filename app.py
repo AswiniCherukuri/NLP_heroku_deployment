@@ -4,7 +4,6 @@ from transformers import DistilBertTokenizer  # loading pretrained DistilBERT to
 from transformers import TFDistilBertForSequenceClassification # loading pretrained DIstilBERT base uncased model
 
 save_directory = "model_weights"
-#save_directory = "https://drive.google.com/drive/folders/1-zhuAuyYUz9HscjRwPauu-J-dbY-zjta?usp=sharing"
 loaded_tokenizer = DistilBertTokenizer.from_pretrained(save_directory)
 loaded_model = TFDistilBertForSequenceClassification.from_pretrained(save_directory)
 
