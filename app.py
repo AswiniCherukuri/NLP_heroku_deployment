@@ -8,7 +8,7 @@ save_directory = "model_weights"
 loaded_tokenizer = DistilBertTokenizer.from_pretrained(save_directory)
 loaded_model = TFDistilBertForSequenceClassification.from_pretrained(save_directory)
 
-st.title("Balsam review to rating prediction model")
+st.title("Review to rating prediction model")
 
 def predict_rating(input_review):
       predict_input = loaded_tokenizer.encode(input_review,
